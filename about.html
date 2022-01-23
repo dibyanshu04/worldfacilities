@@ -72,26 +72,27 @@
 
         <div class="row justify-content-between">
           <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
-            <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
+            <img src="assets/img/—Pngtree—cartoon customer service staff_2879525.png" class="img-fluid"
+              style="margin: 0; padding: 0;" alt="" data-aos="zoom-in">
           </div>
           <div class="col-lg-6 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">Book your Service Online</h3>
+            <h3 data-aos="fade-up">Book Your Service Here</h3>
             <p data-aos="fade-up" data-aos-delay="100">
               We provide door to door services, Just go and book your service online and leave everything on us .
             </p>
             <div class="row">
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <i class="bx bx-phone-call"></i>
-                <h4>On Call Booking</h4>
+                <a href="tel:+919821674444"><i class="bx bx-phone-call text-primary"></i></a>
+                <h4>Tap On Call</h4>
                 <p>You can book the service by calling Us on 9821674444</p>
-                <a type="button" class="btn btn-success" href="tel:+916203015505">Call</a>
+                <div class="hero">
+                </div>
               </div>
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-message-dots"></i>
-                <h4>Booking By Whatsapp</h4>
-                <p>You can book service by contacting us on Whatsapp also</p>
-                <a type="button" class="btn btn-success"
-                  href="https://api.whatsapp.com/send?phone=+916203015505">Whatsapp</a>
+                <a href="https://api.whatsapp.com/send?phone=+919821674444"><i
+                    class="bx bxl-whatsapp text-success"></i></a>
+                <h4>Tap on Whatsapp</h4>
+                <p>You can also book service by contacting us on Whatsapp.</p>
               </div>
             </div>
           </div>
@@ -122,38 +123,38 @@
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
                 <p>A-202 Vidhata Society
-                  Almeda Road Chandanwadi Thane West - 400602</p>
+                  Almeda Road Chandanwadi Thane West - 400602
+                </p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>Worldfaclitycleaningservice@gmail.com</p>
+                <p><a href="mailto:Worldfaclitycleaningservice@gmail.com">Worldfaclitycleaningservice@gmail.com</a></p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>9821674444/ 7506066767</p>
+                <p><a href="tel:+919821674444">9821674444</a>/ <a href="tel:+917506066767">7506066767</a></p>
               </div>
 
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.9063432961743!2d72.96592521473171!3d19.199292587017293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b917b817f219%3A0x39f1aa4b5568bc59!2sVidhata%20Society!5e0!3m2!1sen!2sin!4v1636656307201!5m2!1sen!2sin"
                 frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
 
           </div>
-
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form method="post" name="contact" data-netlify="true" class="email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group col-md-6 mt-3 mt-md-0">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <label for="phone">Your Phone</label>
+                  <input type="tel" class="form-control" name="phone" id="email" placeholder="Your Phone" required>
                 </div>
               </div>
               <div class="form-group mt-3">
@@ -162,14 +163,15 @@
               </div>
               <div class="form-group mt-3">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" name="message" rows="10" 1></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+              <!-- <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div> -->
               <div class="text-center"><button type="submit">Send Message</button></div>
+              <input type="hidden" name="form-name" value="contact">
             </form>
           </div>
 
@@ -196,8 +198,10 @@
               A-202 Vidhata Society <br>
               Almeda Road Chandanwadi Thane West - 400602<br>
               India <br><br>
-              <strong>Phone:</strong> 9821674444 , 7506066766<br>
-              <strong>Email:</strong> Worldfaclitycleaningservice@gmail.com<br>
+              <strong>Phone:</strong> <a href="tel:+919821674444">9821674444</a> , <a
+                href="tel:+917506066766">7506066766</a><br>
+              <strong>Email:</strong><a
+                href="mailto:Worldfaclitycleaningservice@gmail.com">Worldfaclitycleaningservice@gmail.com</a><br>
             </p>
           </div>
 
@@ -249,7 +253,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
-        Designed by <a>Kapalin Technologies</a>
+        Designed by <a target="_blanck" href="https://kapalin.netlify.app/">Kapalin Technologies</a>
       </div>
     </div>
   </footer><!-- End Footer -->
